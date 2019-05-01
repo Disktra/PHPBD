@@ -17,7 +17,7 @@
                         where a.actor_id = $id_actor";
 
             $resultado = $mysqli -> query($sqlQuery);
-            echo '<div class="container-fluid">';
+            echo "<div class=\"container-fluid\">";
             echo "<h1>Listado de películas de un actor</h1>";
             echo "<table>";
             echo "<th><tr><td>Película</td></tr></th>";

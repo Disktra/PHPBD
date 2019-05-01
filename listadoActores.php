@@ -16,7 +16,7 @@
                         order by a.last_name, a.first_name";
 
             $resultado = $mysqli -> query($sqlQuery);
-            echo '<div class="container-fluid">';
+            echo "<div class=\"container-fluid\">";
             echo "<h1>Listado de actores</h1>"; //h1 se refiere a cabecera.
             echo "<table>";
             echo "<th><tr><td>Nombre</td><td>Apellidos</td><td>Total</td></tr></th>";
