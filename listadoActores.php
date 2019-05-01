@@ -8,9 +8,9 @@
 
             $sqlQuery = "select first_name as Nombre, last_name as Apellidos, count(f.film_id) as Total
                         from (actor a
-                        join film_actor fa
+                        left outer join film_actor fa
                         on a.actor_id = fa.actor_id)
-                        join film f
+                        left outer join film f
                         on fa.film_id = f.film_id
                         group by a.actor_id
                         order by a.last_name, a.first_name";
