@@ -21,7 +21,6 @@
         <form action="scriptModificarActor.php" method="get">
             <table>
                 <tr>
-                    <td>ID:</td>
                     <td><input type="hidden" name="id" value=<?php echo $row -> Id;?>></td>
                 </tr>
                 <tr>
